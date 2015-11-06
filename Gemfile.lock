@@ -47,8 +47,6 @@ GEM
       net-dns (~> 0.8)
       public_suffix (~> 1.4)
       typhoeus (~> 0.7)
-    haml (4.0.7)
-      tilt
     html-pipeline (1.9.0)
       activesupport (>= 2)
       nokogiri (~> 1.4)
@@ -117,7 +115,6 @@ GEM
     sass (3.4.19)
     terminal-table (1.5.2)
     thread_safe (0.3.5)
-    tilt (2.0.1)
     toml (0.1.2)
       parslet (~> 1.5.0)
     typhoeus (0.8.0)
@@ -131,7 +128,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  haml
   rouge (~> 1.10, >= 1.10.1)
 
 BUNDLED WITH
