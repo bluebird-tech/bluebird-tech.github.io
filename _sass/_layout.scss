@@ -2,7 +2,8 @@
 
 html, body {
   font-family: $basefont;
-  font-size: 1em;
+  font-size: 1rem;
+  line-height: 1.4;
   height: 100%;
   margin: 0;
 }
@@ -27,7 +28,7 @@ section {
     margin-right: -50%;
     transform: translate(-50%, -50%);
   }
-  
+
   .logo {
     width: 100%;
     height: 50px;
@@ -37,7 +38,9 @@ section {
 }
 
 footer {
-  @extend section;
+  font-size: 0.65rem;
   color: $baseLight;
+  text-align: center;
   background-color: $baseDark;
+  padding: 0.1em 2em;
 }
