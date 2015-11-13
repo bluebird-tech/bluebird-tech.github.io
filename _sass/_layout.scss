@@ -10,12 +10,12 @@ html, body {
 
 section {
   padding: 4em 0 5.5em;
-  background-color: white;
+  background-color: $baseLight;
 }
 
 h2 {
   display: inline-block;
-  background-color: orange;
+  background-color: $accentColor;
   color: white;
   padding: 1em;
   margin: 0 0 1.5em;
@@ -76,7 +76,6 @@ h2 {
       padding: 1em 2.2em;;
     }
   }
-
 }
 
 video#bg-video {
@@ -104,6 +103,10 @@ video#bg-video {
   &:after {
     clear: both;
   }
+}
+//Work
+section.work {
+
 }
 
 // Team section
