@@ -1,140 +1,324 @@
----
-layout: default
----
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+    <title>Blue Bird Technologies Homepage</title>
+    <meta name="description" content="Blue Bird Tech develops mobile apps that help people with mental disorders better deal with their symptoms.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<section class='home'>
-  <video autoplay loop id="bg-video" width="320" height="240">
-    <img src="assets/images/cloudspic.jpg">
-  </video>
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="favicon.ico">
 
-  <header>
-    <div class="circle">
-      <div class="content">
-        <div class='logo'>
-        </div>
-        <h1>
-          helps people with mental disorders gain control over their feelings,
-          accelerate the progress of their therapy and effectively prevent
-          crises in everyday life.
-        </h1>
-        <a id=myBtn>
-        <h3>Blue Bird is supported by:</h3>
-        <img  src="assets/images/Emblem-Standard.jpg" class="grant-logo">
-        </a>
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans:300,400,700" rel="stylesheet">
 
-      </div>
+    <!-- Remove if using minified version of CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/bootstrap-slider.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Uncomment the following to use the minified version of CSS. If you do this, please remove the above references -->
+    <!--
+    <link rel="stylesheet" href="css/alba.min.css" />
+    <link rel="stylesheet" href="css/vendor.min.css">
+    -->
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="90">
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="page-loader d-flex align-items-center justify-content-center">
+    <div class="container">
+        <img class="logo fading-logo" src="img/logo.png" alt="Blue Bird Technologies" />
     </div>
-  </header>
-</section>
-
-    <!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <img  src="assets/images/Emblem-Standard.jpg" class="grant-logo">
-    <p>Die Blue Bird Technologies GmbH wird von der Investitionsbank des Landes Brandenburg mit Mitteln der Europäischen Union gefördert. Investitionen für die Entwicklung und das Design einer Smartphone-App, die Menschen mit Borderline Persönlichkeitsstörung hilft, im Alltag ihre Symptome zu reduzieren und Krisen zu verhindern, werden über das Förderprogramm „Gründung innovativ“ mit maximal 100.000 Euro bezuschusst.</p>
-    <p>Mit dem Förderprogramm „Gründung innovativ“ unterstützt die ILB im Auftrag des Ministeriums für Arbeit, Soziales, Gesundheit, Frauen und Familie, Existenzgründerinnen und Existenzgründer mit innovativen Unternehmensideen und die Übernahmen von innovativ ausgerichteten Unternehmen im Land Brandenburg. Das Ziel des Programms ist:</p>
-    <p>•	Die finanzielle Förderung von Gründerinnen und Gründern mit innovativen Unternehmensideen und
-    <br>•	die Förderung des Wachstums innovativer Unternehmen in den ersten drei Jahren nach Gründung oder Übernahme</p>
-    <p>Die Blue Bird Technologies GmbH wurde zudem kofinanziert durch den Europäischen Fonds für regionale Entwicklung (EFRE). Im Rahmen dessen wurde eine Arbeitsstelle bei der Blue Bird Technologies GmbH geschaffen, welche bis zu 75 % durch Mittel des Europäischen Fonds für regionale Entwicklung (EFRE) bezuschusst wird.</p>
-    <p>Ziel des geförderten Vorhabens ist die Entwicklung einer Smartphone-App für Menschen mit der Borderline Persönlichkeitsstörung, die den Betroffenen im Alltag hilft, Symptome zu reduzieren und Krisen zu verhindern. Der besonders innovative Charakter besteht vor allem in der Nutzung von Smartphone-Sensordaten und Machine Learning Algorithmen, um automatisch zu erkennen, wann dem Betroffenen welche Unterstützung angeboten werden sollte. Mithilfe der App sollen in den nächsten fünf Jahren mehr als 500 Tsd. betroffene Patienten unterstützt werden, ihre Krankheit besser in den Griff zu kriegen und ihr Wohlbefinden zu steigern. Für die Firma Blue Bird stellt die Entwicklung dieser Technologie ein neues vielversprechendes Geschäftsfeld dar, in dem die Firma bis 2021 fünfzig neue Stellen schaffen will.</p>
-
-</p>
-  </div>
-
 </div>
 
+<!-- < NAVIGATION WITH BACKGROUND COLOR NAVBAR >............................................ -->
+<nav class="navbar navbar-expand-md navigation sidebar-left">
+    <div class="container">
+    <button class="navbar-toggler" type="button">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <a href="index.html" class="navbar-brand">
+        <img src="img/logo.png" alt="Blue Bird Technologies" class="logo">
+    </a>
 
-  <script>
-  // Get the modal
-  var modal = document.getElementById('myModal');
+    <div class="collapse navbar-collapse ml-auto" id="main-navbar">
+        <div class="sidebar-brand">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Blue Bird Technologies" class="logo">
+            </a>
+        </div>
 
-  // Get the button that opens the modal
-  var btn = document.getElementById("myBtn");
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="mailto:&#105;&#110;&#102;&#111;&#064;&#098;&#108;&#117;&#101;&#045;&#098;&#105;&#114;&#100;&#045;&#116;&#101;&#099;&#104;&#046;&#099;&#111;&#109;"><i class="fa-cubes"></i>Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://wise-mind.de/"><i class="fa-cubes"></i>Blog</a></li>
+        </ul>
+    </div>
+</div>
 
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
+</nav>
 
-  // When the user clicks the button, open the modal
-  btn.onclick = function() {
-      modal.style.display = "block";
-  }
+<main>
 
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-      modal.style.display = "none";
-  }
+    <header class="header hd-1 section parallax image-background cover p60-bottom overlay overlay-2 alpha-4 color-1">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-7">
+                <h1 class="font-lg color-1">Millions of Psychological Crises can be Prevented</h1>
+                <p class="lead color-1"><strong>Our products offer continuous, proactive support for people with chronic mental disorders</strong></p>
 
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-      if (event.target == modal) {
-          modal.style.display = "none";
-      }
-  }
-  </script>
-
-
+                <nav class="nav mt-5">
+                    <a href="#summary" class="nav-link p-3 mr-2 btn btn-rounded btn-success">
+                        Learn More
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
 
 
-<!-- <section class="work">
-  <header>
-    <h2>Unser Neues Projekt</h2>
-  </header>
-  <a href="assets/pdf/pitchdeck-dummi.pdf" target="blank">
-    <img src="assets/images/pitchdeckpic-dummi.jpg" alt="pitchdeck">
-  </a>
-</section> -->
+    <section class="integration bg-6 alpha-4 b-b">
+    <div class="container d-flex flex-row align-items-center justify-content-between py-3">
 
-<!--
-<section>
-  <div class="team">
-    <ul>
-      <li class="member">
-        <h3>Frank</h3>
-        <p>
-          CTO, Data Scientist <br>
-          Diplom Physics <br>
-          formerly Co-Founder of boost
-        </p>
-      </li>
-      <li class="member">
-        <h3>Benjamin</h3>
-        <p>
-          Business Lead <br>
-          M.Sc. Management, <br>
-          formerly Co-Founder of boost
-        </p>
-      </li>
-    </ul>
-  </div>
-  <div class="clearfix"></div>
+      <!-- Trigger/Open The Modal -->
+      <button id="myBtn" class='btn-11'><img src="img/svg/_/EU.png" alt="European Regional Development Fund"></button>
 
-  <div class="team">
-    <ul>
-      <li class="member">
-        <h3>Gebhard</h3>
-        <p>
-          Product Developer <br>
-          Diplom Informatics
-        </p>
-      </li>
-      <li class="member">
-        <h3>Alice</h3>
-        <p>
-          Design, Frontend <br>
-          B.Sc. Designtt
-        </p>
-      </li>
-      <li class="member">
-        <h3>Assal</h3>
-        <p>
-          Sales, Bus. Analytics <br>
-          B.Sc. Management
-        </p>
-      </li>
-    </ul>
-  </div>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Die Blue Bird Technologies GmbH wird von der Investitionsbank des Landes Brandenburg mit Mitteln der Europäischen Union gefördert. Investitionen für die Entwicklung und das Design einer Smartphone-App, die Menschen mit Borderline Persönlichkeitsstörung hilft, im Alltag ihre Symptome zu reduzieren und Krisen zu verhindern, werden über das Förderprogramm „Gründung innovativ“ mit maximal 100.000 Euro bezuschusst.</p>
+          <p>Mit dem Förderprogramm „Gründung innovativ“ unterstützt die ILB im Auftrag des Ministeriums für Arbeit, Soziales, Gesundheit, Frauen und Familie, Existenzgründerinnen und Existenzgründer mit innovativen Unternehmensideen und die Übernahmen von innovativ ausgerichteten Unternehmen im Land Brandenburg. Das Ziel des Programms ist:</p>
+          <p> <ul type=disc>
+            <li>Die finanzielle Förderung von Gründerinnen und Gründern mit innovativen Unternehmensideen und </li>
+            <li> die Förderung des Wachstums innovativer Unternehmen in den ersten drei Jahren nach Gründung oder Übernahme </li> </ul></p>
+          <p>Die Blue Bird Technologies GmbH wurde zudem kofinanziert durch den Europäischen Fonds für regionale Entwicklung (EFRE). Im Rahmen dessen wurde eine Arbeitsstelle bei der Blue Bird Technologies GmbH geschaffen, welche bis zu 75 % durch Mittel des Europäischen Fonds für regionale Entwicklung (EFRE) bezuschusst wird.</p>
+          <p>Ziel des geförderten Vorhabens ist die Entwicklung einer Smartphone-App für Menschen mit der Borderline Persönlichkeitsstörung, die den Betroffenen im Alltag hilft, Symptome zu reduzieren und Krisen zu verhindern. Der besonders innovative Charakter besteht vor allem in der Nutzung von Smartphone-Sensordaten und Machine Learning Algorithmen, um automatisch zu erkennen, wann dem Betroffenen welche Unterstützung angeboten werden sollte. Mithilfe der App sollen in den nächsten fünf Jahren mehr als 500 Tsd. betroffene Patienten unterstützt werden, ihre Krankheit besser in den Griff zu kriegen und ihr Wohlbefinden zu steigern. Für die Firma Blue Bird stellt die Entwicklung dieser Technologie ein neues vielversprechendes Geschäftsfeld dar, in dem die Firma bis 2021 fünfzig neue Stellen schaffen will.</p>
+        </div>
+      </div>
+        <img src="img/svg/_/BMBF.png" alt="Bundesministerium für Bildung und Forschung">
+        <img src="img/svg/_/ILB.png" alt="Investitionsbank des Landes Brandenburg">
+
+    </div>
+    <a name=summary></a>
 </section>
- -->
+
+    <section class="section">
+    <div class="container-wide">
+        <div class="row align-items-center text-center text-lg-left">
+            <div class="col-10 col-lg-4 mx-auto">
+                <h2>Instant support - it’s in your hands</h2>
+
+                <p>Has the smartphone become your omnipresent companion? We develop apps that provide individual, proactive support anytime, anywhere.</p>
+
+                <p>Ours apps are founded on evidence-based therapies and are suitable for many common mental disorders like depression, borderline personality disorder, post-traumatic stress disorder and addictions.</p>
+
+                <a href="#safetyplan" class="btn btn-rounded">Learn More</a>
+            </div>
+
+            <div class="col-12 col-lg-6 pr-0">
+                <img src="img/screens/summary.jpg" alt="" class="img-responsive shadow" data-aos="fade-left">
+            </div>
+        </div> <a name=safetyplan></a>
+    </div>
+</section>
+
+
+    <section class="section">
+    <div class="container-wide">
+        <div class="row align-items-center text-center text-lg-left">
+            <div class="col-10 col-lg-4 mx-auto order-md-2">
+                <h2><b>Safety Plan App:</b> Quickly Access Help During a Crisis</h2>
+
+                <p>Creating a safety plan with a therapist has become best practice. When a crisis arises, however, there is often little time to search for a physical document.</p>
+
+                <p>This app offers an easy and quick way to access and execute your personal safety plan, helping you to deal with the crisis effectively.</p>
+
+                <a href="https://play.google.com/store/apps/details?id=com.blue_bird_tech.safetyplan.safetyplan&hl=de#details-reviews" class="btn btn-rounded">Get it on Google Play</a>
+            </div>
+
+            <div class="col-12 col-lg-6 pl-0 order-md-1">
+                <img src="img/screens/safety-single.jpg" alt="" class="img-responsive shadow" data-aos="fade-right">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section">
+<div class="container-wide">
+    <div class="row align-items-center text-center text-lg-left">
+        <div class="col-10 col-lg-4 mx-auto">
+            <h2><b>MindCare App:</b> Manage Symptoms and Prevent Crises</h2>
+
+            <p>Tailor-made, proactive help anytime, anywhere - that's MindCare. The MindCare app offers a large variety of evidence-based interventions. Based on sensor data and powerful machine learning algorithms, the app learns which interventions work best for the user and when to trigger them. The goal is to offer individual, proactive support conventional caregivers just can't provide.</p>
+
+            <p>The current beta version helps patients analyse their mental well-being and makes hidden patterns visible.</p>
+
+            <a href="https://play.google.com/store/apps/details?id=com.blue_bird_tech.mindcare" class="btn btn-rounded">Get it on Google Play</a>
+        </div>
+
+        <div class="col-12 col-lg-6 pr-0">
+            <img src="img/screens/mindcare-summary.jpg" alt="MindCare App" class="img-responsive shadow" data-aos="fade-left">
+        </div>
+    </div>
+</div>
+</section>
+
+
+    <section class="singl-testimonial testimonial-1">
+    <div class="container-fluid py-0">
+        <div class="row align-items-center bg-4 alpha-6 color-1">
+            <div class="col-10 col-md-3 text">
+              <p class="text-uppercase mb-0">We are a group of...</p>
+
+                <p class="font-md bold mt-1 color-1">
+                    Tech-loving nerds who use our expertise to help millions of people lead better lives
+                </p>
+
+                <hr class="my-4">
+                <cite class="small bold">
+                    <span class="color-1">Blue Bird Technologies GmbH</span>
+                </cite>
+            </div>
+
+            <div class="col-12 col-md-7 image-background cover"></div>
+        </div>
+    </div>
+</section>
+
+
+    <section class="section features reasons bg-6 alpha-6">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2> Cutting-edge Technology Developed For and With Patients</h2>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-md-4 py-4">
+                <img src="img/svg/patients.png" class="icon m-0" alt="Patient-centered">
+                <h5 class="regular accent my-3">Patient-centered</h5>
+                <p class="my-0">We work together with therapists, scientists, and, most importantly, patients to deliver highly useful products.</p>
+            </div>
+            <div class="col-md-4 py-4">
+                <img src="img/svg/evidence.png" class="icon m-0" alt="Evidence-based">
+                <h5 class="regular accent my-3">Evidence-based</h5>
+                <p class="my-0">Our apps are founded on evidence-based psychotherapies.</p>
+            </div>
+            <div class="col-md-4 py-4">
+                <img src="img/svg/data.png" class="icon m-0" alt="Data-driven">
+                <h5 class="regular accent my-3">Data-driven</h5>
+                <p class="my-0">Our machine learning algorithms deliver data-based individual recommendations at just the right time.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section sign-up bg-1 alpha-7">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-4 ml-auto d-flex order-md-2">
+                <p class="handwritten m-auto"><span class="d-block">We’d love to hear from you!</span></p>
+            </div>
+
+            <div class="col-12 col-md-8 order-md-1">
+                <h2>Stay in touch!</h2>
+                <p>Leave your email and we’ll gladly keep you posted.</p>
+
+                <div class="form-wrap">
+                    <form action="srv/signup.php" class="form-inline form-signup" method="post" response-message-animation="slide-in-up">
+    <div class="input-group">
+        <input class="bg-1 form-control" type="email" name="Signup[email]" placeholder="Your email address" id="signup_email" required>
+
+        <button type="submit" data-loading-text="Creating ..." class="btn btn-success">
+            <i class="fa-arrow-right"></i> Send
+        </button>
+    </div>
+</form>
+
+<div class="response-message">
+    <i class="fa-envelope-o font-lg mb-2"></i>
+
+    <p class="font-md m-0">Check your email</p>
+
+    <p class="response">We sent you an email with a link to get started. You’ll be in your account in no time.</p>
+</div>
+
+<div>
+  <nav class="nav mt-5">
+      <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#098;&#108;&#117;&#101;&#045;&#098;&#105;&#114;&#100;&#045;&#116;&#101;&#099;&#104;&#046;&#099;&#111;&#109;" class="nav-link p-3 mr-2 btn btn-rounded btn-success">
+          Send Message
+      </a>
+  </nav>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer section bg-5 color-smoke">
+    <div class="container pb-3">
+        <div class="row">
+            <div class="col-12 col-md-5 mr-auto">
+                <!-- <h4 class="color-1">About <span class="bold">Alba</span></h4> -->
+
+                <img src="img/logo weiß.png" class="icon ml-0" alt="Blue Bird Technologies">
+
+                <p>Whether you want to work with us or simply have a question, don't hesitate to get in touch! Simply send us an email to <A href="mailto:&#105;&#110;&#102;&#111;&#064;&#098;&#108;&#117;&#101;&#045;&#098;&#105;&#114;&#100;&#045;&#116;&#101;&#099;&#104;&#046;&#099;&#111;&#109;">&#105;&#110;&#102;&#111;&#064;&#098;&#108;&#117;&#101;&#045;&#098;&#105;&#114;&#100;&#045;&#116;&#101;&#099;&#104;&#046;&#099;&#111;&#109;</A></p>
+            </div>
+        </div>
+
+        <hr class="mt-5 bg-2 border-0">
+        <div class="row footer-bottom small">
+            <div class="col">
+                <p class="mt-2 mb-0">© 2018 Blue Bird Technologies. All Rights Reserved</p>
+            </div>
+
+            <div class="col-sm-6 col-md-auto">
+                <nav class="nav">
+                    <a class="nav-link" href="imprint.html">Imprint</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Remove if using minified version of JS -->
+<script src="js/popper.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/pace.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script src="js/aos.min.js"></script>
+<script src="js/bootstrap-slider.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/modernizr-2.8.3.min.js"></script>
+<script src="js/forms.min.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Uncomment the following to use the minified version of JS. If you do this, please remove the above references -->
+<!--
+<script src="js/lib.min.js"></script>
+<script src="js/alba.min.js"></script>
+-->
+
+</body>
+</html>
