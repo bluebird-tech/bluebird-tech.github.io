@@ -1335,7 +1335,7 @@ main {
 
 .navigation {
   background-color: #ffffff;
-  min-height: 90px;
+  min-height: 40px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s; }
   @media (max-width: 767px) {
@@ -1504,8 +1504,8 @@ main {
         background: transparent; }
       .navigation .nav-item .nav-link {
         color: #3b4455;
-        padding: 34px 15px;
-        height: 50px;
+        padding: 12px 15px;
+        height: 40px;
         font-weight: 700;
         text-transform: uppercase; }
         .navigation .nav-item .nav-link i {
