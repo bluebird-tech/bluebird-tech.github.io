@@ -1601,8 +1601,8 @@ form .form-group label.error, .form .form-group label.error {
 
 .btn-1 {
   color: #111;
-  background-color: #ffffff;
-  border-color: #ffffff; }
+  background-color: rgb(252, 252, 252);
+  border-color: rgb(252, 252, 252); }
   .btn-1:hover {
     color: #111;
     background-color: #ececec;
